@@ -1,0 +1,21 @@
+# Definindo o nome do Workflow
+name: Test Workflow
+
+# Definindo quando o WorkFlow será disparado. É aqui onde vou executar as Triggers.
+on:
+  push: # push é uma palavra reservada de uma trigger. aciona o fluxo de trabalho cada vez que alguém faz push para o repositório
+    branches: [ main, developer ] # Qualquer mudança que o ocorrer nessas branchs, será o executando os jobs. Posso especificar mais de uma branch, por exemplo [ main, developer ] e aí para cada workflow executado será alterado essas branchs.
+
+# Definindo os jobs que o workflow executará. O ESPAÇAMENTO É SEMPRE POR TABULAÇÃO
+jobs:
+  test_job:
+    name: Executando o job de teste
+    runs-on: ubuntu-latest # runs-on, onde o sistema será rodado. Defino o sistema operacional. "latest": consigo definir a versão do sistema operacional.
+
+    # Todos os passos que serão feitos no job.
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 # no git hub eu encontro uma lib de actions prontas para serem executadas no workflow. "checkout@v2": faz o download do código que estou checkado.
+
+      - name: Executando um comando simples
+        run: echo "Olá, mundo! Este é o nosso primeiro job no GitHub Actions!"
