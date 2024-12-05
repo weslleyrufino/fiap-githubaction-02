@@ -1,0 +1,14 @@
+D:\Projetos\FIAP\2-Fase\docker\bin\Debug\net8.0\docker.exe
+D:\Projetos\FIAP\2-Fase\docker\bin\Debug\net8.0\docker.deps.json
+D:\Projetos\FIAP\2-Fase\docker\bin\Debug\net8.0\docker.runtimeconfig.json
+D:\Projetos\FIAP\2-Fase\docker\bin\Debug\net8.0\docker.dll
+D:\Projetos\FIAP\2-Fase\docker\bin\Debug\net8.0\docker.pdb
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.AssemblyInfoInputs.cache
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.AssemblyInfo.cs
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.csproj.CoreCompileInputs.cache
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.dll
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\refint\docker.dll
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.pdb
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\docker.genruntimeconfig.cache
+D:\Projetos\FIAP\2-Fase\docker\obj\Debug\net8.0\ref\docker.dll
