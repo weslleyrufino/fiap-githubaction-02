@@ -25,7 +25,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v6.10.0
         with:
-          context: . # Colocando somente o . significa que estou considerando o diretório raiz.
+          context: ./docker # Colocando somente o . significa que estou considerando o diretório raiz.
           tags: 'weslleyrufino/fiap-ghactions:latest'
           push: true
           
