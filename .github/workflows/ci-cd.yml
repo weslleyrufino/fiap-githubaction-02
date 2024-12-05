@@ -11,7 +11,6 @@ jobs:
   test_job:
     name: Executando o job de teste
     runs-on: ubuntu-latest # runs-on, onde o sistema será rodado. Defino o sistema operacional. "latest": consigo definir a versão do sistema operacional.
-
     # Todos os passos que serão feitos no job.
     steps:
       - name: Checkout code
@@ -22,3 +21,11 @@ jobs:
         with:
           username: 'weslleyrufino'
           password: ${{ secrets.DOCKERHUB_PASSWORD}}
+
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v6.10.0
+        with:
+          context: . # Colocando somente o . significa que estou considerando o diretório raiz.
+          tags: 'latest'
+          push: true
+          
