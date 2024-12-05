@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v6.10.0
         with:
           context: . # Colocando somente o . significa que estou considerando o diretório raiz.
-          tags: 'latest'
+          tags: 'weslleyrufino/fiap-ghactions:latest'
           push: true
           
