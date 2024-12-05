@@ -17,5 +17,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2 # no git hub eu encontro uma lib de actions prontas para serem executadas no workflow. "checkout@v2": faz o download do código que estou checkado.
 
-      - name: Executando um comando simples
-        run: echo "Olá, mundo! Este é o nosso primeiro job no GitHub Actions!"
+      - name: Docker Login
+        uses: docker/login-action@v3.3.0
+        with:
+          username: 'weslleyrufino'
+          password: ${{ secrets.DOCKERHUB_PASSWORD}}
